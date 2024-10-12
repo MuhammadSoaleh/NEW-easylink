@@ -1,226 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-      <!-- site metas -->
-      <title>EASYLINK</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <!-- fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-      <!-- font awesome -->
-      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!--  -->
-      <!-- owl stylesheets -->
-      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesoeet" href="css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-   </head>
-   <body>
-      <!-- banner bg main start -->
-      <div class="banner_bg_main">
-         <!-- header top section start -->
-         <div class="container">
-            <div class="header_section_top">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="custom_menu">
-                        <ul>
-                           <li><a href="/index.html">Home</a></li>
-                           <li><a href="/contactus.html">Contactus</a></li>
-                           <!-- <li><a href="#"></a></li>
-                           <li><a href="#">Today's Deals</a></li> -->
-                           <li><a href="/customerservices.html">Customer Service</a></li>
-                        </ul>
-                     </div>
-                  </div>
+<div class="header_section">
+   <div class="container">
+       <div class="containt_main">
+           <div id="mySidenav" class="sidenav">
+               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+               <a href="/index.html">Home</a>
+               <a href="/contactus.html">Contact Us</a>
+               <a href="/customerservices.html">Customer Services</a>
+           </div>
+           <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
+           <div class="dropdown">
+               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category</button>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                   <a class="dropdown-item" href="#">Action</a>
+                   <a class="dropdown-item" href="#">Another action</a>
+                   <a class="dropdown-item" href="#">Something else here</a>
                </div>
-            </div>
-         </div>
-         <!-- header top section start -->
-         <!-- logo section start -->
-         <div class="logo_section">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="logo"><a href="index.html"><h1 style="color: #f1f1f1;">EASYLINK</h1></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- logo section end -->
-         <!-- header section start -->
-         <div class="header_section">
-            <div class="container">
-               <div class="containt_main">
-                  <div id="mySidenav" class="sidenav">
-                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                     <a href="/index.html">Home</a>
-                     <a href="/contactus.html">Contactus</a>
-                     <a href="/customerservices.html">Customer Services</a>
-                     <!-- <a href="jewellery.html">Jewellery</a> -->
-                  </div>
-                  <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
-                  <div class="dropdown">
-                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
-                     </button>
-                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                     </div>
-                  </div>
-                  <div class="main">
-                     <!-- Another variation with a button -->
-                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search this blog">
-                        <div class="input-group-append">
-                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+           </div>
+           <div class="main">
+               <div class="input-group">
+                   <input type="text" class="form-control" placeholder="Search this blog">
+                   <div class="input-group-append">
+                       <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522">
                            <i class="fa fa-search"></i>
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="header_box">
-                     <div class="lang_box ">
-                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
-                        <img src="images/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
-                        </a>
-                        <div class="dropdown-menu ">
-                           <a href="#" class="dropdown-item">
-                           <img src="images/flag-france.png" class="mr-2" alt="flag">
-                           French
-                           </a>
-                        </div>
-                     </div>
-                     <div class="login_menu">
-                        <ul>
-                           <a class="btn btn-warning mx-3" style="color: #f1f1f1;" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                              <i class="fa-light fa-cart-shopping"></i> CART
-                            </a>
-                            <!-- <button class="btn btn-warning" style="color: #f1f1f1;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                              Button with data-bs-target
-                            </button> -->
-                            
-                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                              <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                              </div>
-                              <div class="offcanvas-body">
-                                 <div class="card" style="width: 18rem;">
-                                    <img src="/images/camera1.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title px-3">Card title</h5>
-                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    </div>
-                                    
-                                    <div class="card-body">
-                                      <a href="#" class="card-link btn btn-primary "> <i class="fa-light fa-cart-shopping"></i>Add</a>
-                                      <a href="#" class="card-link btn btn-danger px-4"> <i class="fa-light fa-trash"></i>Remove</a>
-                                    </div>
-                                  </div>
-                              </div> 
-                            </div>
-                           <!-- <li><a href="#">
-                              <i class="fa fa-user" aria-hidden="true"></i>
-                              <span class="padding_10">Cart</span></a>
-                           </li> -->
-                        </ul>
-                     </div>
-                  </div>
+                       </button>
+                   </div>
                </div>
-            </div>
-         </div>
-<div class="col-12">
-   <center> <h2 class="my-3">Contactus</h2></center>
-   <form action="" method="post">
-   <div class="form-floating mb-3">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-</div>
-<div class="mb-3 mx-3">
-   <!-- <label for="exampleFormControlTextarea1" class="form-label">Message</label> -->
-   <textarea class="form-control my-3" placeholder="Message" id="exampleFormControlTextarea1" rows="3"></textarea>
- </div>
-<button type="submit" class="btn btn-warning mx-3 mb-3 mt-3" style="background-color:#404040;color: #f1f1f1;">Submit</button>
-</form>
-<!-- footer section start -->
-<div class="footer_section layout_padding">
-   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1808.14887299499!2d67.06367543685406!3d24.98999672716661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3411e02cd4563%3A0x1ee4f28f7828162a!2sKarachi%20Mobile%20Bara%20Market!5e0!3m2!1sen!2s!4v1728548445355!5m2!1sen!2s" width="100%" height="70%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-   <div class="container">
-      <div class="footer_logo"><a href="index.html"><H2 style="color:#f1f1f1;">EASYLINK</H2></a></div>
-      <div class="input_bt">
-         <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
-         <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
-      </div>
-      <div class="footer_menu">
-         <ul>
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="/customerservices.html">CUSTOMER SERVICES</a></li>
-            <!-- <li><a href="#">New Releases</a></li> -->
-            <li><a href="/contactus.html">CONTACT US</a></li>
-            <!-- <li><a href="#">Customer Service</a></li> -->
-         </ul>
-      </div>
-      <div class="location_main">Help Line  Number : <a href="https://api.whatsapp.com/send/?phone=%2B923111088938&text&type=phone_number&app_absent=0">+92 311 1088938</a></div>
+           </div>
+           <div class="header_box">
+               <div class="lang_box">
+                   <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
+                       <img src="images/flag-uk.png" alt="flag" class="mr-2" title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
+                   </a>
+                   <div class="dropdown-menu">
+                       <a href="#" class="dropdown-item">
+                           <img src="images/flag-france.png" class="mr-2" alt="flag"> French
+                       </a>
+                   </div>
+               </div>
+               <div class="login_menu">
+                   <ul>
+                       <a class="btn btn-warning mx-3" style="color: #f1f1f1;" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                           <i class="fa-light fa-cart-shopping"></i> CART
+                       </a>
+                       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                           <div class="offcanvas-header">
+                               <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                           </div>
+                           <div class="offcanvas-body">
+                               <div class="card" style="width: 18rem;">
+                                   <img src="/images/camera1.png" class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                       <h5 class="card-title px-3">Card title</h5>
+                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                   </div>
+                                   <div class="card-body">
+                                       <a href="#" class="card-link btn btn-primary"><i class="fa-light fa-cart-shopping"></i> Add</a>
+                                       <a href="#" class="card-link btn btn-danger px-4"><i class="fa-light fa-trash"></i> Remove</a>
+                                   </div>
+                               </div>
+                               <hr>
+                               <div class="price">
+                                   <hr>
+                                   <div>Total: <span>pkr</span></div>
+                               </div>
+                           </div> 
+                       </div>
+                   </ul>
+               </div>
+           </div>
+       </div>
    </div>
 </div>
-<!-- footer section end -->
-<!-- copyright section start -->
-<div class="copyright_section">
-   <div class="container">
-      <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">Muhammad Soaleh</a></p>
-   </div>
-</div>
-<!-- copyright section end -->
-<!-- Javascript files-->
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/jquery-3.0.0.min.js"></script>
-<script src="js/plugin.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<!-- sidebar -->
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="js/custom.js"></script>
-<script>
-   function openNav() {
-     document.getElementById("mySidenav").style.width = "250px";
-   }
-   
-   function closeNav() {
-     document.getElementById("mySidenav").style.width = "0";
-   }
-</script>
-</body>
-</html>
-         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
-  
